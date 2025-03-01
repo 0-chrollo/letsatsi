@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--[SEO optiomization section]-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Finance and Loans| Gqeberha</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script> 
+
+    <!--[SEO optiomization section]-->
+    <meta title="SEO" description="Search Engine Wording">
+     <!--[SEO optiomization section]-->
+
+
+</head>
+
+
+
+
+
+
+
+<body style="background-color: #d6dde6f0;">
+
+
+
+</div>
+    <nav class="navbar">
+        <img src="images/logo.png" alt="Finance" style="width: fit-content;filter: none;">
+        <ul>
+            
+            <li><a href="gallery.html"><i class="fas fa-file-image" style="color:  #a7b8cbd1;"></i> Gallery</a></li>
+            <li><a href="courses.html"><i class="fas fa-graduation-cap" style="color:  #a7b8cbd1;"></i> Courses</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope" style="color: #a7b8cbd1;"></i> Contact</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-location-dot" style="color: #a7b8cbd1;"></i> Location</a></li>
+           
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="menu" id="menu">
+        <ul class="mobiles">
+           
+            
+            <a href="gallery.html"><i class="fas fa-file-image" style="color:  #a7b8cbd1;"></i> Gallery</a></li>
+            <a href="courses.html"><i class="fas fa-graduation-cap" style="color:  #a7b8cbd1;"></i> Courses</a></li>
+            <a href="#contact"><i class="fas fa-envelope" style="color: #a7b8cbd1;"></i> Contact</a></li>
+            <a href="#contact"><i class="fa-solid fa-location-dot" style="color: #a7b8cbd1;"></i> Location</a></li>
+    
+            
+            
+           
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero-container {
+            position: relative;
+            height: 91vh;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+        }
+
+        .content {
+            max-width: 600px;
+            color: white;
+            z-index: 2;
+        }
+
+        .content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            padding: 15px 40px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* Navigation Arrows */
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 3;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .prev {
+            left: 2%;
+        }
+
+        .next {
+            right: 2%;
+        }
+
+        .nav-button svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        /* Indicators */
+        .indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 3;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: #007bff;
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 2.5rem;
+            }
+
+            .content p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+
+            .nav-button {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+
+    <div class="hero-container">
+        <button class="nav-button prev">
+            <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+        </button>
+        <button class="nav-button next">
+            <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </button>
+
+        <div class="indicators"></div>
+
+        <!-- Slides -->
+        <div class="slide active">
+            <img src="1000011210.jpg" alt="Finance 1">
+            <div class="overlay">
+                <div class="content">
+                    <h1>Smart Loans for Your Financial Freedom</h1>
+                    <p>Get competitive rates and flexible repayment options tailored to your needs.</p>
+                    <button class="cta-button">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="1000011209.jpg" alt="Finance 2">
+            <div class="overlay">
+                <div class="content">
+                    <h1>Expert Financial Planning Services</h1>
+                    <p>Secure your future with our comprehensive investment strategies and wealth management.</p>
+                    <button class="cta-button">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add 4 more slides following the same pattern -->
+      
+
+        <div class="slide">
+            <img src="1000011208.jpg" alt="Finance 4">
+            <div class="overlay">
+                <div class="content">
+                    <h1>Business Growth Financing</h1>
+                    <p>Fuel your business expansion with our customized financing solutions.</p>
+                    <button class="cta-button">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="1000011106.jpg" alt="Finance 5">
+            <div class="overlay">
+                <div class="content">
+                    <h1>Personal Loan Solutions</h1>
+                    <p>Get fast approval for personal loans with competitive interest rates.</p>
+                    <button class="cta-button">Read More</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicatorsContainer = document.querySelector('.indicators');
+        let autoSlideInterval;
+
+        // Create indicators
+        slides.forEach((_, index) => {
+            const indicator = document.createElement('div');
+            indicator.classList.add('indicator');
+            if (index === 0) indicator.classList.add('active');
+            indicator.addEventListener('click', () => showSlide(index));
+            indicatorsContainer.appendChild(indicator);
+        });
+
+        // Navigation buttons
+        document.querySelector('.prev').addEventListener('click', () => prevSlide());
+        document.querySelector('.next').addEventListener('click', () => nextSlide());
+
+        function showSlide(n) {
+            clearInterval(autoSlideInterval);
+            slides.forEach(slide => slide.classList.remove('active'));
+            document.querySelectorAll('.indicator').forEach(ind => ind.classList.remove('active'));
+            
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            document.querySelectorAll('.indicator')[currentSlide].classList.add('active');
+            
+            startAutoSlide();
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 4000);
+        }
+
+        // Initialize
+        showSlide(0);
+    </script>
+   
+
+</body>
