@@ -7,47 +7,10 @@
 
 
 
-
-.content-wrapper section {
-    position: relative;
-    z-index: 2; 
-    color: #fff;
-    text-align: center; /* Center the text horizontally */
-    padding: 10vh; /* Optional padding */
-    margin-bottom: 40vh; /* Space for buttons */
-}
-
-
-
-
-
 .button:hover {
     background-color: darkgray; /* Darken button on hover */
 }
 
-
-.carding {
-    position: relative; /* Needed for my overlay */
-   
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-
-.carding::before {
-    
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(146, 160, 187, 0.637); 
-    z-index: 1; 
-}
 
 
 
@@ -56,7 +19,7 @@
     position: sticky;
     top: 0;
     width: 100%;
-    background-color:rgb(86, 1, 1);
+    background-color:rgb(136, 3, 3);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -109,7 +72,7 @@
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: rgb(45, 0, 0);
+    background-color: rgb(136, 3, 3);
     transition: all 0.3s ease;
 }
 
@@ -187,7 +150,7 @@
 }
 
 .toggle-checkbox:checked + .toggle-label {
-    background-color: #002aff;
+    background-color: rgb(136, 3, 3);
 }
 
 
@@ -263,7 +226,7 @@ background-color:  rgb(204, 237, 235);
         right: -100%;
         width: 50%;
         height:105%;
-        background-color:rgb(45, 0, 0);
+        background-color:rgb(136, 3, 3);
         display: flex;
         flex-direction: column;
         justify-content: center;
