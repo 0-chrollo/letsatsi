@@ -418,24 +418,35 @@
 
 
 
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0vh;
-       
-        margin: auto;
-       
-    }
+.container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10vh;
+           
+            
+           
+        }
 
-    .content {
-        flex: 1;
-       
-        padding: 20px;
-        text-align: left;
-      
-       
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
-    }
+        .content2 {
+            flex: 1;
+           
+            padding: 5px;
+            text-align: left;
+          
+           
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+        }
+    
+    
+        .content {
+            flex: 1;
+           
+            padding: 20px;
+            text-align: left;
+          
+           
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+        }
 
     .title, .subtitle {
         font-size: 20px;
@@ -485,7 +496,7 @@
 
 <div class="container">
     <div class="content">
-        <h1 class="title">
+        <h1 class="title" style="font-size: 35px;">
             <span class="highlight"> <i class="fas fa-hand-holding-usd icon"></i> We Are Econo Loans,</span> Your <span class="highlight">Trusted Partner</span> in Times of Financial Need.
         </h1>
         <p class="description">
@@ -516,6 +527,7 @@
 <div class="lining">
 
     <style>
+       
         .lining {
             margin: 0;
             background-color: #f8f8f8;
@@ -579,71 +591,76 @@
 
 
 
-    <div class="new-section">
-        <!-- Image Column -->
-        <div class="image-box">
+    <div class="container">
+        <div class="content2">
+           
+            <div class="image-box">
+            <img src="loani.jpg" alt="Loan Application"> 
+
+            <div style="margin-top: 35px;">
             <p class="futuristic-text">
-                 Welcome to a future where <span class="highlight">loan applications</span> are effortless!  
-                Say goodbye to stacks of paperwork and hello to **a streamlined, stress-free process.
-            </p>
-            <img src="loani.jpg" alt="Loan Application"> </br>
-            <p> </br>
                 Welcome to a future where <span class="highlight">loan applications</span> are effortless!  
-               Say goodbye to stacks of paperwork and hello to **a streamlined, stress-free process.
+               Say goodbye to stacks of paperwork and hello to a streamlined, stress-free process.
            </p>
         </div>
+       
+        </div>
+        </div>
+        
+    
     
         <!-- Text + Icon Column -->
-        <div class="text-box">
-            <h3 class="section-title">We <span class="highlight">have seamless Loan application documents</span> that aren't a hassle</h3>
-            <div class="icon-box">
-                <i class="fas fa-money-bill-wave icon"></i>
-                <p class="description">
-                    We prioritize simplicity! Our <span class="highlight">loan application</span> process is designed to be **quick, efficient, and stress-free.** No unnecessary paperwork—just a seamless process tailored to your needs.
-                </p>
-            </div>
-        </div>
+        
+            <div class="content2">
+                <div class="text-box">
+                    <h3 class="section-title">We <span class="highlight">have seamless Loan application documents</span> that aren't a hassle.</h3>
+                    <div class="icon-box" align="center">
+                        <i class="fas fa-money-bill-wave icon"></i>
+                    </div>
+                        <p class="description">
+                            We prioritize simplicity! Our <span class="highlight">loan application</span> process is designed to be **quick, efficient, and stress-free.** No unnecessary paperwork—just a seamless process tailored to your needs.
+                        </p>
+                    
+                </div>
+
+
+
     </div>
-    
+    </div>
     <style>
     
-    .new-section {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10%;
-      max-width: 11000px;
-        margin: auto;
-        padding: 40px 20px;
-        align-items: center;
-    }
+ 
     
     .image-box {
         flex: 1;
-        min-width: 400px;
+        max-width: 80%;
+        
+       
     }
     
     .image-box img {
         width: 100%;
         height: auto;
         border-radius: 1px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.623);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.466);
     }
     
     .text-box {
         flex: 1;
         min-width: 400px;
-        padding: 20px;
+        margin-top: 35px;
+        
     }
     
     .futuristic-text {
         font-size: 20px;
         font-weight: 600;
-        color: #444;
+        color: #200c0c91;
         text-align: left;
-        margin-bottom: 15px;
+        margin-bottom: 1px;
         border-left: 4px solid rgb(116, 2, 2);
         padding-left: 15px;
-        line-height: 1.5;
+        line-height: 1;
     }
     
    
@@ -668,11 +685,14 @@
         }
     
         .icon-box {
-            padding: 20px;
+            
+            align-self: center;
         }
     }
     
     </style>
+
+
 
 
 
