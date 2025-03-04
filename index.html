@@ -24,13 +24,13 @@
 
 
 
-<body style="background-color: #d6dde6f0;">
+<body>
 
 
 
 </div>
     <nav class="navbar">
-        <img src="images/logo.png" alt="Finance" style="width: fit-content;filter: none;">
+        <img src="1000011106.jpg" alt="Finance" style="width: fit-content;filter: none;">
         <ul>
             
             <li><a href="gallery.html"><i class="fas fa-file-image" style="color:  #a7b8cbd1;"></i> Gallery</a></li>
@@ -114,7 +114,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(45, 0, 0, 0.288);
             display: flex;
             align-items: center;
             padding: 0 10%;
@@ -139,7 +139,7 @@
 
         .cta-button {
             padding: 15px 40px;
-            background: #007bff;
+            background: rgb(45, 0, 0);
             color: white;
             border: none;
             border-radius: 5px;
@@ -185,7 +185,7 @@
         .nav-button svg {
             width: 24px;
             height: 24px;
-            fill: white;
+            fill: rgb(56, 0, 0);
         }
 
         /* Indicators */
@@ -209,7 +209,7 @@
         }
 
         .indicator.active {
-            background: #007bff;
+            background:rgb(45, 0, 0);
             transform: scale(1.2);
         }
 
@@ -235,15 +235,15 @@
     </style>
 
     <div class="hero-container">
-        <button class="nav-button prev">
+       <button class="nav-button prev"> 
             <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
-        </button>
+        </button></a> 
         <button class="nav-button next">
             <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
         </button>
 
         <div class="indicators"></div>
-
+      
         <!-- Slides -->
         <div class="slide active">
             <img src="1000011210.jpg" alt="Finance 1">
@@ -340,6 +340,342 @@
         // Initialize
         showSlide(0);
     </script>
-   
 
+
+
+
+
+<style>
+
+    .pulse-icon {
+       position: relative;
+        font-size: 20px;
+        color:rgb(45, 0, 0);
+       
+        text-shadow: 0 0 10px rgba(133, 2, 2, 0.8), 0 0 20px rgba(107, 3, 23, 0.463);
+        animation: glow 1.5s infinite alternate ease-in-out;
+    }
+
+    .pulse-icon::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        background: rgba(45, 0, 0, 0.108);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulse 1.5s infinite ease-in-out;
+        box-shadow: 0 0 10px rgba(98, 1, 20, 0.6), 0 0 30px rgba(96, 1, 20, 0.4);
+    }
+
+    @keyframes pulse { 
+        0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.9;
+        }
+        50% {
+            transform: translate(-50%, -50%) scale(1.4);
+            opacity: 0.5;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1.9);
+            opacity: 0;
+        }
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px rgba(255, 0, 51, 0.8), 0 0 20px rgba(255, 0, 51, 0.6);
+        }
+        to {
+            text-shadow: 0 0 12px rgba(255, 0, 51, 1), 0 0 20px rgba(255, 0, 51, 0.8);
+        }
+    }
+</style>
+
+<div align="center" style="margin-top: 35px;">
+<i class="fa fa-chevron-down pulse-icon">|</i>
+</div>
+    <!--First Important Section-->
+   
+<section>
+
+
+
+
+
+
+    <h1 style="margin-left:15px; ">About <span style="color: rgb(137, 4, 4);">US</span></h1>
+
+
+
+
+
+
+<style>
+
+
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15vh;
+       
+        margin: auto;
+       
+    }
+
+    .content {
+        flex: 1;
+       
+        padding: 20px;
+        text-align: left;
+      
+       
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+    }
+
+    .title, .subtitle {
+        font-size: 24px;
+        font-weight: 600;
+        color: #222;
+    }
+
+   
+    .subtitle span {
+        font-size: 50px;
+        
+        font-weight: 600;
+    }
+
+    .highlight {
+        color: rgb(137, 4, 4);
+        font-weight: bold;
+    }
+
+    .description {
+        font-size: 16px;
+        color: #555;
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+
+    .icon {
+        font-size: 2rem;
+        color: rgb(137, 4, 4);
+        margin-top: 10px;
+    }
+
+    /* Responsive: Stacks columns on smaller screens */
+    @media (max-width: 850px) {
+        .container {
+            flex-direction: column;
+            gap: 1vh
+            
+        }
+
+        .content {
+            min-width: 100%;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="content">
+        <h1 class="title">
+            <span class="highlight">We Are Econo Loans,</span> Your <span class="highlight">Trusted Partner</span> in Times of Financial Need.
+        </h1>
+        <p class="description">
+            Our mission is to provide <span class="highlight">personalized financial solutions</span> to individuals and families facing financial challenges. We understand that unexpected expenses, job loss, or medical emergencies can put a strain on your finances. 
+            That’s why we’re here to <span class="highlight">offer a helping hand</span>. Our team of experienced financial experts will work with you to create a customized plan that suits your needs.
+        </p>
+        <i class="fas fa-hand-holding-usd icon"></i>
+    </div>
+    <div class="content">
+        <h2 class="subtitle">
+            At <span class="highlight">Econo Loans,</span> We Believe in <span class="highlight">Empowering You</span> to Take Control of Your Finances.
+        </h2>
+        <p class="description">
+            Our financial assistance programs are designed to provide a <span class="highlight">safety net</span> during difficult times. Whether you’re struggling to pay bills, facing debt collection, or simply need some extra cash, we’re here to help. 
+            Our goal is to provide you with the <span class="highlight">support and guidance</span> you need to overcome challenges and build a <span class="highlight">brighter financial future.</span>
+        </p>
+        <i class="fas fa-chart-line icon"></i>
+    </div>
+</div>
+</section>
+
+</section>
+
+
+
+<!--Line animation (Customized)-->
+
+<div class="lining">
+
+    <style>
+        .lining {
+            margin: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background: rgb(86, 1, 1);
+            padding: 10px 0;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .marquee {
+            display: inline-block;
+            font-size: 18px;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(80%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+
+    <div class="marquee-container">
+        <div class="marquee">
+            NO CREDIT CHECKS • NO-OBLIGATION QUOTES • INSTANT APPROVAL • LOW RATES • 100% SECURE •
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<div class="second-section" style="margin: 14px;">
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="new-section">
+        <!-- Image Column -->
+        <div class="image-box">
+            <p class="futuristic-text">
+                 Welcome to a future where <span class="highlight">loan applications</span> are effortless!  
+                Say goodbye to stacks of paperwork and hello to **a streamlined, stress-free process.
+            </p>
+            <img src="loani.jpg" alt="Loan Application"> </br>
+            <p> </br>
+                Welcome to a future where <span class="highlight">loan applications</span> are effortless!  
+               Say goodbye to stacks of paperwork and hello to **a streamlined, stress-free process.
+           </p>
+        </div>
+    
+        <!-- Text + Icon Column -->
+        <div class="text-box">
+            <h3 class="section-title">We <span class="highlight">have seamless Loan application documents</span> that aren't a hassle</h3>
+            <div class="icon-box">
+                <i class="fas fa-money-bill-wave icon"></i>
+                <p class="description">
+                    We prioritize simplicity! Our <span class="highlight">loan application</span> process is designed to be **quick, efficient, and stress-free.** No unnecessary paperwork—just a seamless process tailored to your needs.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+    
+    .new-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10%;
+      max-width: 11000px;
+        margin: auto;
+        padding: 40px 20px;
+        align-items: center;
+    }
+    
+    .image-box {
+        flex: 1;
+        min-width: 400px;
+    }
+    
+    .image-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 1px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.623);
+    }
+    
+    .text-box {
+        flex: 1;
+        min-width: 400px;
+        padding: 20px;
+    }
+    
+    .futuristic-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #444;
+        text-align: left;
+        margin-bottom: 15px;
+        border-left: 4px solid rgb(116, 2, 2);
+        padding-left: 15px;
+        line-height: 1.5;
+    }
+    
+   
+    
+    .icon-box .icon {
+        font-size: 2.5rem;
+        color: #ff4081;
+        margin-bottom: 10px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 850px) {
+        .new-section {
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+        .image-box, .text-box {
+            min-width: 100%;
+        }
+    
+        .icon-box {
+            padding: 20px;
+        }
+    }
+    
+    </style>
+
+
+
+
+
+
+
+</div>
 </body>
