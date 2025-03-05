@@ -25,7 +25,7 @@
         <img style="width: fit-content;filter: none;">
         <ul>          
             <li><a href="#"><i class="fas fa-file-image" style="color:  #a7b8cbd1;"></i> Apply Now </a></li>
-            <li><a href="#"><i class="fas fa-graduation-cap" style="color:  #a7b8cbd1;"></i> Requirements</a></li>
+            <li><a href="#requirements"><i class="fas fa-graduation-cap" style="color:  #a7b8cbd1;"></i> Requirements</a></li>
             <li><a href="#contact"><i class="fas fa-envelope" style="color: #a7b8cbd1;"></i> Contact</a></li>
             <li><a href="#contact"><i class="fa-solid fa-location-dot" style="color: #a7b8cbd1;"></i> Location</a></li>
            
@@ -40,10 +40,10 @@
         <ul class="mobiles">
            
             
-            <a href="apply.html"><i class="fas fa-file-image" style="color:  #a7b8cbd1;"></i> Apply Now</a></li>
-            <a href="courses.html"><i class="fas fa-graduation-cap" style="color:  #a7b8cbd1;"></i> Requirements</a></li>
+            <a href="#"><i class="fas fa-file-image" style="color:  #a7b8cbd1;"></i> Apply Now</a></li>
+            <a href="#requirements"><i class="fas fa-graduation-cap" style="color:  #a7b8cbd1;"></i> Requirements</a></li>
             <a href="#contact"><i class="fas fa-envelope" style="color: #a7b8cbd1;"></i> Contact</a></li>
-            <a href="#contact"><i class="fa-solid fa-location-dot" style="color: #a7b8cbd1;"></i> Location</a></li>
+            <a href="#location"><i class="fa-solid fa-location-dot" style="color: #a7b8cbd1;"></i> Location</a></li>
        
         </ul>
     </div>
@@ -209,6 +209,37 @@
                 Welcome to a future where <span class="highlight">loan applications</span> are effortless!  
                Say goodbye to stacks of paperwork and hello to a streamlined, stress-free process.
            </p>
+           <ul class="custom-list">
+            <li><i class="fas fa-check-circle"></i> Less Time</li>
+            <li><i class="fas fa-check-circle"></i> Hassle-Free</li>
+            <li><i class="fas fa-check-circle"></i> Secure</li>
+           
+        </ul>
+    
+        <style>
+               .custom-list {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0;
+    }
+
+    .custom-list li {
+        color: rgba(50, 9, 9, 0.652);;
+        padding: 10px 0;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-list i {
+        color: rgb(136, 3, 3);
+        margin-right: 10px;
+        font-size: 19px;
+    }
+
+
+        </style>
+
         </div>
        
         </div>
@@ -216,18 +247,40 @@
         
     
         
-            <div class="content2">
+            <div id="requirements" class="content2">
                 <div class="text-box">
                     <h3 class="section-title">We <span class="highlight">have seamless Loan application documents</span> that aren't a hassle.</h3>
                     <div class="icon-box" align="center">
-                        <i class="fas fa-money-bill-wave icon"></i>
+                        <h2  style="color: rgba(69, 4, 4, 0.695);">Requirements -</h2>
+
+    <ul class="custom-list">
+        <li><i class="fas fa-check-circle"></i> Bring ID</li>
+        <li><i class="fas fa-check-circle"></i> Proof of address</li>
+        <li><i class="fas fa-check-circle"></i> Bank statement</li>
+    
+    </ul>
+
                     </div>
                         <p class="description">
                             We prioritize simplicity! Our <span class="highlight">loan application</span> process is designed to be quick, efficient, and stress-free. No unnecessary paperwork—just a seamless process tailored to your needs.
                         </p>
                     
                 </div>
-
+        <button  style="
+        margin: 7vh;
+        margin-left: 9vh;
+        align-items: center;
+        justify-content: center;
+         padding: 12px 45px;
+        background:rgb(136, 3, 3);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;">Apply Now</button>
     </div>
     </div>
 
@@ -324,7 +377,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(52, 0, 0, 0.559);
+            background: rgba(52, 0, 0, 0);
             border: none;
             color: white;
             font-size: 2rem;
@@ -334,9 +387,7 @@
             transition: 0.3s;
         }
 
-        .banner-nav:hover {
-            background: rgba(60, 5, 5, 0.6);
-        }
+    
 
         .prev-btn {
             left: 12px;
