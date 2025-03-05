@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--[SEO optiomization section]-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Finance and Loans| Gqeberha</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script> 
+
+    <!--[SEO optiomization section]-->
+    <meta title="SEO" description="Search Engine Wording">
+     <!--[SEO optiomization section]-->
+
+
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img style="width: fit-content;filter: none;">
+        <ul>          
+            <li><a href="index.html"><i class="fas fa-file-image" style="color:  #a7b8cbd1;"></i> Home</a></li>
+            <li><a href="courses.html"><i class="fas fa-graduation-cap" style="color:  #a7b8cbd1;"></i> Requirements</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope" style="color: #a7b8cbd1;"></i> Contact</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-location-dot" style="color: #a7b8cbd1;"></i> Location</a></li>
+           
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="menu" id="menu">
+        <ul class="mobiles">
+           
+            
+            <a href="index.html"><i class="fas fa-file-image" style="color:  #a7b8cbd1;"></i> Home</a></li>
+            <a href="courses.html"><i class="fas fa-graduation-cap" style="color:  #a7b8cbd1;"></i> Requirements</a></li>
+            <a href="#contact"><i class="fas fa-envelope" style="color: #a7b8cbd1;"></i> Contact</a></li>
+            <a href="#contact"><i class="fa-solid fa-location-dot" style="color: #a7b8cbd1;"></i> Location</a></li>
+       
+        </ul>
+    </div>
+
+
+
+    <style>
+      
+
+        .banner-container {
+            background-color:  rgba(91, 1, 1, 0.871);;
+            position: relative;
+            width: 100%;
+            height: 65vh;
+            overflow: hidden;
+        }
+
+        .banner-wrapper {
+            align-items: center;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s ease-in-out;
+        }
+
+        .banner-slide {
+            flex: 1;
+            min-width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            text-align: center;
+            padding: 80px;
+            position: relative;
+        }
+
+        .banner-slide:nth-child(1) {
+            background:url('https://source.unsplash.com/1600x900/?investment') center/cover no-repeat;
+        }
+
+        .banner-slide:nth-child(2) {
+            background: linear-gradient( rgba(52, 0, 0, 0.559), rgba(52, 0, 0, 0.559))url('https://source.unsplash.com/1600x900/?startup') center/cover no-repeat;
+        }
+
+        .banner-slide:nth-child(3) {
+            background: linear-gradient( rgba(52, 0, 0, 0.559)), url('https://source.unsplash.com/1600x900/?creditcard') center/cover no-repeat;
+        }
+
+        .banner-content {
+            max-width: 650px;
+            color: white;
+            padding: 20px;
+          
+            border-radius: 3px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner-heading {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff4081;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner-text {
+            font-size: 1.4rem;
+            line-height: 1.7;
+            color: #f8f8f8;
+            font-weight: 500;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(52, 0, 0, 0.559);
+            border: none;
+            color: white;
+            font-size: 2rem;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .banner-nav:hover {
+            background: rgba(60, 5, 5, 0.6);
+        }
+
+        .prev-btn {
+            left: 12px;
+        }
+
+        .next-btn {
+            right: 12px;
+        }
+
+        .banner-indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+
+        .indicator-dots {
+            width: 12px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .indicator-dots.active {
+            background: #a20303;
+            width: 15px;
+            height: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .banner-slide {
+                padding: 30px;
+                justify-content: center;
+            }
+
+            .banner-content {
+                max-width: 85%;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .banner-heading {
+                font-size: 1.8rem;
+            }
+
+            .banner-text {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            .banner-nav {
+                font-size: 1.5rem;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+
+    
+
+    <div class="banner-container">
+        <div class="banner-wrapper">
+            <div class="banner-slide">
+                <div class="banner-content">
+                    <h2 class="banner-heading">🚀 Unlock New Opportunities</h2>
+                    <p class="banner-text">
+                        Expand your horizons with strategic financial solutions. Whether you're investing or saving, we're here to help you grow.
+                    </p>
+                </div>
+            </div>
+
+            <div class="banner-slide">
+                <div class="banner-content">
+                    <h2 class="banner-heading">💼 Power Your Business</h2>
+                    <p class="banner-text">
+                        Get the funding you need to scale your business, launch new ventures, and reach new heights.
+                    </p>
+                </div>
+            </div>
+
+            <div class="banner-slide">
+                <div class="banner-content">
+                    <h2 class="banner-heading">💳 Smarter Financial Solutions</h2>
+                    <p class="banner-text">
+                        Whether it's credit cards, loans, or savings plans, we provide modern solutions tailored to your needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <button class="banner-nav prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="banner-nav next-btn"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="banner-indicators">
+            <span class="indicator-dots active" data-slide="0"></span>
+            <span class="indicator-dots" data-slide="1"></span>
+            <span class="indicator-dots" data-slide="2"></span>
+        </div>
+    </div>
+
+
+    <style>
+        .containerd {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0; /* No space between columns */
+        }
+        .column-1 {
+          flex: 3; /* 60% */
+          min-width: 250px;
+          box-sizing: border-box;
+       
+          background-color: lightgray;
+        }
+        .column-2 {
+          flex: 2; /* 40% */
+          min-width: 250px;
+          box-sizing: border-box;
+          padding: 20px;
+          background-color: lightblue;
+        }
+        @media (max-width: 768px) {
+          .container {
+            gap: 20px; /* Add space between columns on smaller screens */
+          }
+          .column-1, .column-2 {
+            flex: 1 1 100%; /* Full width on small screens */
+          }
+        }
+      </style>
+  
+      <div class="containerd">
+        <div class="column-1">
+
+
+
+        </div>
+        <div class="column-2">
+          <h2>Column 2 (40%)</h2>
+          <p>This is the second column with 40% width. No gap on large screens.</p>
+        </div>
+      </div>
+    
